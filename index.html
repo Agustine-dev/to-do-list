@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="16x16" rel="icon" href="../to-do-list/assets/Web/icons8-to-do-list-bearicons-outline-color-16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="../to-do-list/assets/Web/icons8-to-do-list-bearicons-outline-color-32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="../to-do-list/assets/Web/icons8-to-do-list-bearicons-outline-color-96.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="../to-do-list/assets/Android Chrome/favicon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../to-do-list/assets/Android Chrome/favicon96.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="../to-do-list/assets/iOS Safari Web Clip/icons8-to-do-list-bearicons-outline-color-57.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../to-do-list/assets/iOS Safari Web Clip/icons8-to-do-list-bearicons-outline-color-60.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="../to-do-list/assets/iOS Safari Web Clip/icons8-to-do-list-bearicons-outline-color-72.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../to-do-list/assets/iOS Safari Web Clip/icons8-to-do-list-bearicons-outline-color-76.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/darkly/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>To-Do List App</title>
@@ -49,5 +58,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
+    <!-- <script>
+      // Function to set the favicon based on the current platform
+      function setFavicon() {
+        var link = document.querySelector("link[rel~='icon']");
+  
+        // Determine the platform or device and set the appropriate favicon
+        var platform = navigator.platform.toLowerCase();
+        if (platform.includes("android")) {
+          link.href = "./assets/Android Chrome/favicon.png";
+        } else if (platform.includes("iphone") || platform.includes("ipad") || platform.includes("ipod")) {
+          link.href = "./assets/iOS Safari Web Clip/favicon.ico";
+        } else if (platform.includes("win")) {
+          link.href = "./assets/Windows/favicon.ico";
+        } else {
+          link.href = "./assets/Web/favicon.ico";
+        }
+      }
+  
+      // Call the function to set the favicon when the page loads
+      window.addEventListener("load", setFavicon);
+      </script> -->
 </body>
 </html>
