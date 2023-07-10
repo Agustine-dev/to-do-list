@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List App</title>
+</head>
+<body>
+
+    <header>
+		<h1>To-Do List</h1>
+	</header>
+	<main>
+<form>
+  <input type="text" placeholder="Add a new task...">
+  <div class="categories">
+   <input required type="datetime-local">
+  <div>
+  <input type="radio" id="work" name="category" value="work">
+  <label for="work">Work</label>
+</div>
+<div>
+  <input type="radio" id="personal" name="category" value="personal">
+  <label for="personal">Personal</label>
+</div>
+<div>
+  <input type="radio" id="shopping" name="category" value="shopping">
+  <label for="shopping">Shopping</label>
+</div>
+  </div>
+    <input type="file" accept="image/*">
+  <textarea placeholder="Add notes..."></textarea>
+  <div class="prior">
+    <select>
+    <option value="low" class="lw">Low Priority</option>
+    <option value="medium" class="mm">Medium Priority</option>
+    <option value="high" class="hh">High Priority</option>
+  </select>
+  </div>
+  <button type="submit">Add</button>
+</form>
+		<ul>
+			<!-- To-Do list items will be added here dynamically -->
+		</ul>
+	</main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
